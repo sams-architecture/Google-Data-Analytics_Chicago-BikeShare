@@ -7,12 +7,22 @@
 # ggplot for visualization
 # # # # # # # # # # # # # # # # # # # # # # #  
 
+install.packages("tidyverse")
+
 library(tidyverse)  #data wrangling
-library(lubridate)  #importing and wrangling date attributes
-library(ggplot2)  #visualizing the data
+# # # # # # # # # # # # # # # # # # # # # # # 
+# Revised 09.25.25 - Following lines no longer needed - Included with Tidyverse
+#library(lubridate)  #importing and wrangling date attributes
+#library(ggplot2)  #visualizing the data
+# # # # # # # # # # # # # # # # # # # # # # # 
 
 getwd() #display my working directory
-setwd("C:/Users/SMorimune/Desktop/Google_Data_Analytics_Capstone_BikeShare/Capstone_BikeShare_Datasets_CSV") 
+# # # # # # # # # # # # # # # # # # # # # # # 
+# Revised 09.25.25 - Updated for new computer
+#setwd("C:/Users/SMorimune/Desktop/Google_Data_Analytics_Capstone_BikeShare/Capstone_BikeShare_Datasets_CSV") 
+# # # # # # # # # # # # # # # # # # # # # # # 
+
+setwd("/Users/smorimune/Desktop/Google_Data_Analytics_Capstone_BikeShare/Capstone_BikeShare_Datasets_CSV") 
 #connect with my working directory
 
 #=====================
@@ -174,7 +184,12 @@ counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual + all_
 
 print(counts)
 
-write.csv(counts, file = "C:\\Users\\SMorimune\\Desktop\\Google_Data_Analytics_Capstone_BikeShare\\Capstone_BikeShare_Datasets_CSV_Clean.csv")
+# # # # # # # # # # # # # # # # # # # # # # # 
+# Revised 09.25.25 - Updated for new computer
+#write.csv(counts, file = "C:\\Users\\smorimune\\Desktop\\Google_Data_Analytics_Capstone_BikeShare\\Capstone_BikeShare_Datasets_CSV_Clean.csv") 
+# # # # # # # # # # # # # # # # # # # # # # # 
+
+write.csv(counts, file = "\\Users\\smorimune\\Desktop\\Google_Data_Analytics_Capstone_BikeShare\\Capstone_BikeShare_Datasets_CSV_Clean.csv")
 
 
 
