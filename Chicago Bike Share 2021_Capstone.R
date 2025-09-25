@@ -192,7 +192,6 @@ print(counts)
 write.csv(counts, file = "\\Users\\smorimune\\Desktop\\Google_Data_Analytics_Capstone_BikeShare\\Capstone_BikeShare_Datasets_CSV_Clean.csv")
 
 
-
 #You're done! Congratulations!
 
 
